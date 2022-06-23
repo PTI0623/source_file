@@ -1,0 +1,12 @@
+package ex0623;
+
+public class FF {
+	public static void main(String[] args) {
+		
+		boolean a = true;
+		boolean b = false;
+		char c ='A';
+		int d = 100;
+		
+	}
+}

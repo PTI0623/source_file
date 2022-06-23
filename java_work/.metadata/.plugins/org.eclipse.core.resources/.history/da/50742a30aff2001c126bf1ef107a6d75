@@ -1,0 +1,18 @@
+package ex0623;
+
+public class FF {
+	public static void main(String[] args) {
+		
+		boolean a = true;
+		boolean b = false;
+		System.out.println(a);
+		System.out.println(b);
+		char c = 'A';
+		String s = "roro123kiqweiqwjeio213242rororoor";
+		int d = 100;
+
+		System.out.println(c);
+		System.out.println(d);
+		System.out.println(s);
+	}
+}
