@@ -1,0 +1,10 @@
+print("a의 값을 입력")
+a = int(input())
+b = int(input("b의 값을 입력\n"))
+
+print("a",a)
+print("b",b)
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
