@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position:absolute;
+            width: 400px;
+            background-color: aqua;
+        }
+        #aa{
+            left:500px;
+            bottom: 20px;
+            font-size: 100pt;
+            width: 240px;
+            padding: 20px;
+            background-color : green;
+           
+        }
+        .bb{
+            bottom: 500px;
+            font-size: 100pt;
+            width: 300px;
+            height : 200px;
+            padding: 20px; 
+            background-color: yellow
+        }
+        #cc{
+            font-size: 100pt;
+            height : 300px;
+            padding: 20px;
+            background-color: red;
+        }
+        button{
+            bottom :50px;
+            margin: 50px;
+        }
+        #dd{
+            width: 100%;
+            background-color: azure;
+        }
+    </style>
+    <script>
+        var a= 10;
+        function doA(){
+            alert(clicked);
+            document.getElementById('bb').style.color="red";
+        }
+    </script>
+    
+</head>
+<body>
+    <div id="aa">AA</div>
+    <div class="bb">BB</div>
+    <div id="cc">CC</div>
+    <div id="dd">
+        <input type=button onclick="doA();">Add to Click</input>
+    </div>
+</body>
+</html>
