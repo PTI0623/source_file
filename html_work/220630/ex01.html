@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Seletor Basic</title>
+    <style>
+        .select{
+            color:green;
+        }
+        h1{
+            color: red;
+            background-color: yellow;
+        }  
+        input[type=text]{
+            background-color: blanchedalmond;
+            height: 2rem;
+        }
+        input[type=password]{
+            background-color: yellow;
+            height: 2rem;
+        }
+        img[src$=jpg]{border:3px solid black}
+        img[src$=gif]{border:5px dotted blue}
+    </style>
+</head>
+<body>
+    <h1 class ="select">h1 head...</h1>
+    <ul>
+        <li class="select"><strong>1...</strong></li>
+        <li>2...</li>
+        <li>3...</li>
+    </ul>
+    <form>
+        <input type="text">
+        <input type="password">
+    </form>
+    <img src="a.jpg" width="200" height="268">
+    <img src="b.jpg" width="200">
+    <img src="c.gif" width="400">
+</body>
+</html>

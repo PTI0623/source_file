@@ -2,7 +2,7 @@ package ex0627;
 
 public class hw02 {
 	public static void main(String[] args) {
-		int num1= 100;
+		int num1= 550;
 		int num2= 100;
 		int big;
 		int diff;

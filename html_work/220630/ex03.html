@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color:red;
+            background-color: pink;
+        }
+        h1 + h2{
+            color:aqua;
+            background-color: azure;
+        }
+        h1 ~ h3{
+            color:brown;
+        }
+        p:hover{
+            font-size: 2rem;
+        }
+        p:active{
+            font-size : 3rem;
+        }
+        input:enabled{background-color: crimson;}
+        input:focus{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input> 
+        <input type="text" disabled>
+        <h1>head</h1>
+        <h2>head2</h2>
+        <h3>head3</h3>
+        <h4>head4</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut sapiente laudantium accusamus ullam quaerat nihil corporis deleniti! Quis odio, quasi iure blanditiis facere ad odit placeat reiciendis nisi labore corporis?</p>
+    </div>
+</body>
+</html>
