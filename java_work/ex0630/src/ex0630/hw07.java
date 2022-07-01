@@ -16,3 +16,11 @@ public class hw07 {
 		System.out.println("합계는 :"+sum);
 	}
 }
+
+/*while(true){
+ 	sum+=num;
+ 	num +=2;
+ 	System.out.println("num :"+num);
+ 	if(sum>1000)
+ 		break;
+ } */

@@ -5,7 +5,7 @@ public class hw03 {
 
 		int n = 1;
 		int sum = 0;
-		while (n < 101) {
+		while (n < 1001) {
 			if ((n % 2 == 0) && (n % 7 == 0)) {
 				System.out.println("최소공배수는 :" + n);
 				sum+=n;
