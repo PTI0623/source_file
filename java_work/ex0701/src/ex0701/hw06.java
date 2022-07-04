@@ -9,13 +9,15 @@ public class hw06 {
 
 		else {
 			int temp = n % 2;
-			System.out.print(temp);
+			System.out.println(temp);
 			return (n % 2) * ten(n / 2);
 		}
 	}
 
 	public static void main(String[] args) {
-		int t;
+		int t=0;
 		t = ten(20);
+		
+		
 	}
 }
