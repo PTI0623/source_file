@@ -1,0 +1,16 @@
+    * { margin:0px; padding:0px; box-sizing: border-box; }
+    p::selection{background-color: bisque; color: red;}
+    p:hover{font-size: 3rem;}
+    a{text-decoration: none; color:black;}
+    a:visited{color:violet;}
+    a:link::after{content: "-" attr(href) "-";}
+    #aa{
+        text-align: center;
+        font-size: 2rem;
+        border: 3px solid black;
+        border-radius: 10px 10px 10px 10px;
+        padding:50px;
+        width: 300px;
+        height: 150px;
+        background-color: aquamarine;
+    }
