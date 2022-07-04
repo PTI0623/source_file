@@ -6,6 +6,8 @@ java와 python 공부하는곳
 
 #스테이지에 올리는 명령어
 git add .//모든 파일
+
+#git add .log //하나만 올리고싶을때
 git add READ.ME//파일지정
 
 #승인
