@@ -2,7 +2,6 @@ package ex0705;
 
 public class A {
 	
-	
 	public int a=10;
 	
 	public void doA() {
