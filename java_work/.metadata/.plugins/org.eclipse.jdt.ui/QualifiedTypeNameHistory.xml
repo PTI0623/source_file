@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="myclass.ZZZ"/>
     <fullyQualifiedTypeName name="bb.AAA"/>
     <fullyQualifiedTypeName name="cc.AAA"/>
+    <fullyQualifiedTypeName name="ex0707.Cat"/>
+    <fullyQualifiedTypeName name="zoo.Cat"/>
+    <fullyQualifiedTypeName name="zoo.Duck"/>
+    <fullyQualifiedTypeName name="zoo.Dog"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

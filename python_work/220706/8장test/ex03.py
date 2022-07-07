@@ -10,3 +10,7 @@ def numFind():
     print(num)
 
 numFind()
+
+num=1
+while 3*num/2!=63:
+    num +=1
