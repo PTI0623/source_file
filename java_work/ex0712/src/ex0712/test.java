@@ -2,35 +2,31 @@ package ex0712;
 
 public class test {
 	public static int minValue(int[] arr) {
-		int temp = 0;
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr.length; j++) {
-				if (arr[i] > arr[i + j]) {
-					temp = arr[i + j];
-					arr[i] = arr[i + j];
-					arr[i + j] = temp;
-				}
+		int min = arr[0];
+		for (int i=0;i<arr.length;i++) {
+			if (min > arr[i]) {
+				min=arr[i];
 			}
-			return arr[0];
+			//System.out.println(min);
 		}
-		return 0;
+		return min;
 	}
 
-	public static int maxValue(int[] arr) {s
-		int temp = 0;
+	public static int maxValue(int[] arr) {
+		int max = arr[0];
 		for (int e : arr) {
-			if (e > e + 1) {
-	
+			if (max < e) { //arr[e] -> 중복 배열된거임. e 안에 arr[0]~arr[6]
+				max=e;
 			}
 		}
+		return max;
 	}
 
 	public static void main(String[] args) {
-		int[] a = { 2, 3, 1, 4, 5 };
+		int[] a = { 2, 3, 4, 5, 6, 7 };
 		int result1 = minValue(a);
 		System.out.println(result1);
-		int result2 = maxValue(a);
-		System.out.println(result2);
+		System.out.println(maxValue(a));
 
 	}
 }
