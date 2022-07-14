@@ -13,7 +13,7 @@ git rm -r --cached .
 #하나만 올리고싶을때 
 git add .log
 
-#gitignore 
+#VScode에서 gitignore파일생성 후 안에 올리지 않을 파일 경로 작성
 java_work/.metadata/*
 제주도/*
 .log
