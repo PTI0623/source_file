@@ -7,8 +7,14 @@ java와 python 공부하는곳
 #스테이지에 올리는 명령어
 git add .//모든 파일
 
-#git add .log //하나만 올리고싶을때
-git add READ.ME//파일지정
+#실수로 올린 파일 삭제 명령어
+git rm -r --cached .
+
+#하나만 올리고싶을때
+git add .log
+
+#파일지정
+git add READ.ME
 
 #승인
 git commit -m"20220627"
