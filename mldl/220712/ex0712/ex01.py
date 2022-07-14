@@ -17,7 +17,9 @@ smelt_weight = [6.7, 7.5, 7.0, 9.7, 9.8, 8.7,
 print(len(bream_length))
 print(len(smelt_length))
 
-
+plt.scatter(bream_length, bream_weight, c='#ff0000')
+plt.scatter(x, y, c='#00ff00')
+plt.scatter(smelt_length, smelt_weight, c="#0000ff")
 
 plt.xlabel('length')
 plt.ylabel('weight')
