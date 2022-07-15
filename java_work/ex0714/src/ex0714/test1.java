@@ -1,36 +1,39 @@
 package ex0714;
-class Box{
+
+class Box {
 	public void simpleWrap() {
 		System.out.println("Simple Wrapping");
 	}
 }
-class PaperBox extends Box{
+
+class PaperBox extends Box {
+	@Override
 	public void simpleWrap() {
 		System.out.println("Paper Wrapping");
 	}
 }
-class GoldPaperBox extends Box{
+
+class GoldPaperBox extends Box {
+
+	@Override
 	public void simpleWrap() {
 		System.out.println("Gold Wrapping");
 	}
-
-public static void wrapBox(Box box) {
-		box.simpleWrap();
 }
-	
+
 public class test1 {
 	public static void main(String[] args) {
 		Box box1 = new Box();
-		PaperBox box2 = new PaperBox();
-		GoldPaperBox box3 = new GoldPaperBox();
-		
-		3
+		Box box2 = new PaperBox();
+		Box box3 = new GoldPaperBox();
 		
 		wrapBox(box1);
 		wrapBox(box2);
 		wrapBox(box3);
+	}
 
-	}		
-	
+	public static void wrapBox(Box box) {
+		box.simpleWrap();
+	}
+
 }
-
