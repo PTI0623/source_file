@@ -118,8 +118,28 @@ for alpha in alpha_list:
 print(train_score)
 print(test_score)
 print(예측점수리스트)
+plt.plot(np.log10(alpha_list),train_score)
+plt.plot(np.log10(alpha_list),test_score)
+plt.title("Lidge")
+plt.legend(['훈련점수','테스트점수'])
+plt.show()
 
-plt.plot(alpha_list,train_score)
-plt.plot(alpha_list,test_score)
-plt.plot(alpha_list,예측점수리스트)
+lasso=Lasso()
+lasso.fit(train_scaled,train_target)
+print(lasso.score(train_scaled,train_target))
+print(lasso.score(test_scaled,test_target))
+
+alpha_list =[0.001,0.01,0.1,1,10,100]
+train_score = []
+test_score = []
+for alpha in alpha_list:
+    lasso = Lasso(alpha=alpha, max_iter=10000)
+    lasso.fit(train_scaled,train_target)
+    train_score.append(lasso.score(train_scaled,train_target))
+    test_score.append(lasso.score(test_scaled, test_target))
+
+plt.plot(np.log10(alpha_list),train_score)
+plt.plot(np.log10(alpha_list),test_score)
+plt.legend(['훈련점수','테스트점수'])
+plt.title("Lasso")
 plt.show()
