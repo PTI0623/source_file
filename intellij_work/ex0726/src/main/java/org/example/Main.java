@@ -12,6 +12,16 @@ public class Main {
          MemberService memberService= acac.getBean(MemberService.class);
          memberService.list();
     }
+    public static void newCommand(MemberDto md){
+        MemberService memberService= acac.getBean(MemberService.class);
+        try{
+            memberService.regist(md);
+        }
+        catch (Exception e){
+            System.out.println("email 중복되서 넣을수 없음");
+        }
+
+    }
     public static void main(String[] args) throws IOException {
         acac= new AnnotationConfigApplicationContext(ClassConfig.class);
 
@@ -26,11 +36,19 @@ public class Main {
                     listCommand();
                     //리스트출력
                 }
-                else if(cmd.startsWith("new ")){
-                    String name = cmd.split(" ")[1];
-                    acac.getBean(MemberDao.class).data.put(name,md1.setEmail(name));
+                else if(cmd.startsWith("new")){
+                    try {
+                        String email = cmd.split(" ")[1];
+                        String name = cmd.split(" ")[2];
+                        String pwd = cmd.split(" ")[3];
+                        MemberDto md = new MemberDto(name,pwd,email);
+                        newCommand(md);
+                    }
+                    catch(ArrayIndexOutOfBoundsException ie){
+                        System.out.println("new aa@naver.com 김길동 1234 형식으로 입력하세요\n띄어쓰기 필수");
+                    }
+                        System.out.println("등록되었습니다.");
 
-                    System.out.println("등록되었습니다.");
                     //입력
                 }
                 else if (cmd.equalsIgnoreCase("exit")) {
@@ -44,7 +62,6 @@ public class Main {
         finally {
             acac.close();
         }
-
 //        MemberDao dao = acac.getBean(MemberDao.class);
 //        insert(new MemberDto("홍길동","aaa","bbb"));
 //        if (MemberDao.memberlist.size()==0) System.out.println("내용없음");

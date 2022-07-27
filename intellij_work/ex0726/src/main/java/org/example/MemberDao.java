@@ -11,6 +11,14 @@ public class MemberDao {
         data.values().forEach(memberDto -> System.out.println(memberDto));
         System.out.println();
     }
+    //emial 검사
+    public String getSelectByEmail(String email){
+        MemberDto dto = data.get(email);
+        if(dto != null)
+            return "we select the email";
+        else
+            return "we already exist this email";
+    }
     public void insert(MemberDto dto){
         data.put(dto.getEmail(),dto);
     }
